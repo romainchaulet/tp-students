@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="child">
+    <app-register-student></app-register-student>
+  </div>
+  <div class="child">
+    <div class="container-student">
+      <app-student
+        class="child-student"
+        *ngFor="let student of students"
+        [std]="student"
+        (sendDeleteEvent)="deleteStudent($event)"
+      ></app-student>
+    </div>
+  </div>
+</div>

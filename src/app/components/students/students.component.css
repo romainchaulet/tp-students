@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  gap: 5px;
+}
+
+.container-student {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.child {
+  width: 50%;
+}
+
+.child-student {
+  width: 30%;
+}

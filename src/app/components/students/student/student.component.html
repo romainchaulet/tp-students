@@ -1,0 +1,12 @@
+<div class="w3-col s6">
+  <div class="card">
+    <img [src]="std.picture" alt="Avatar" />
+    <div class="container">
+      <h4>
+        <b>{{ std | namePrefix }}</b>
+      </h4>
+      <p>{{ std.dateOfBirth | date: 'dd/MM/yyyy' }}</p>
+      <button (click)="deleteStudent()">Supprimer</button>
+    </div>
+  </div>
+</div>
